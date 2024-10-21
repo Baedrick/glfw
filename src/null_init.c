@@ -105,6 +105,10 @@ GLFWbool _glfwConnectNull(int platformID, _GLFWplatform* platform)
         .waitEvents = _glfwWaitEventsNull,
         .waitEventsTimeout = _glfwWaitEventsTimeoutNull,
         .postEmptyEvent = _glfwPostEmptyEventNull,
+
+        // Hazel
+        .setWindowTitleBar = _glfwSetWindowTitlebarNull,
+
         .getEGLPlatform = _glfwGetEGLPlatformNull,
         .getEGLNativeDisplay = _glfwGetEGLNativeDisplayNull,
         .getEGLNativeWindow = _glfwGetEGLNativeWindowNull,
